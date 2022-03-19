@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <center>
+    <head>
+        <title>Thyroid disorderd prediction</title>
+        <h1>Thyroid Disorderd prediction</h1>
+    </head>
+    
+    <body>
+        <form action='predict/' method="post">
+         {% csrf_token %}
+            <!--'TSH','FTI','TT4','T3','query_hypothyroid','on_thyroxine','sex','pregnant','psych'-->
+            <label for="TSH">TSH</label>
+            <input  type="number" id="TSH"  name="TSH"  ><br><br>
+            
+            <label for="FTI">FTI</label>
+            <input  type="number" id="FTI"  name="FTI"  ><br><br>
+            
+            <label for="TT4">TT4</label>
+            <input  type="number" id="TT4"  name="TT4"  ><br><br>
+            
+            <label for="T3">T3</label>
+            <input  type="number" id="T3"  name="T3"  ><br><br>
+            
+            <label for="query_hypothyroid">query_hypothyroid</label>
+            <select id="query_hypothyroid" name="query_hypothyroid">
+                    <option value='number'> SELECT </option>
+                    <option value='1'>TRUE</option>
+                    <option value='0'>FALSE</option>
+            </select> <br><br>
+            <label for="on_thyroxine">on_thyroxine</label>
+            <select id="on_thyroxine" name="on_thyroxine">
+                    <option value='number'> SELECT </option>
+                    <option value='1'>TRUE</option>
+                    <option value='0'>FALSE</option>
+            </select><br><br>
+            <label for="sex">sex</label>
+            <select id="sex" name="sex">
+                    <option value='number'> SELECT </option>
+                    <option value='1'>Male</option>
+                    <option value='0'>Female</option>
+            </select><br><br>
+            <label for="pregnant">pregnant</label>
+            <select id="pregnant" name="pregnant">
+                    <option value='number'> SELECT </option>
+                    <option value='1'>TRUE</option>
+                    <option value='0'>FALSE</option>
+            </select><br><br>
+            <label for="psych">psych</label>
+            <select id="psych" name="psych">
+                    <option value='number'> SELECT </option>
+                    <option value='1'>TRUE</option>
+                    <option value='0'>FALSE</option>
+            </select><br><br>
+            
+
+            <button>Submit</button><br><br>
+        
+        </form>
+        
+    
+        
+    </body>
+    
+
+    </center>
+
+</html>
