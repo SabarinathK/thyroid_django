@@ -1,4 +1,7 @@
+{%load static%}
+
 <!DOCTYPE html>
+
 <html>
     <center>
     <head>
@@ -12,7 +15,7 @@
         When the thyroid makes too much thyroid hormone, your body uses energy too quickly. This is called hyperthyroidism</h4>
         <br><br>
         <h3>{{data}}</h3> 
-        <img src="../assets/tyroid.jpg">
+        <img src={% static 'tyroid.jpg' %}>
     </body>
 </center>
 </html>
