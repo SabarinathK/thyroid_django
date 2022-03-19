@@ -1,1 +1,2 @@
-web: gunicorn thyroid.wsgi --log-file -
+web: python manage.py collectstatic --no-input;
+web: gunicorn thyroid.wsgi
