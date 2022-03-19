@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-)!_b6+a77x2-irr#@3)6pj8rm3*ti!$l_43*%eu-bs&%17-5zq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['thyroid-django.herokuapp.com']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app'
 ]
 
 MIDDLEWARE = [
