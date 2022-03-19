@@ -1,4 +1,4 @@
-{%load static%}
+{% load static %}
 
 <!DOCTYPE html>
 
@@ -12,10 +12,10 @@
         <h3>Prediction Result</h3>
         <h4>Thyroid disease is a general term for a medical condition that keeps your thyroid from making the right amount of hormones.<br>
         Your thyroid typically makes hormones that keep your body functioning normally.<br>
-        When the thyroid makes too much thyroid hormone, your body uses energy too quickly. This is called hyperthyroidism</h4>
+        When the thyroid makes too much thyroid hormone, your body uses energy too quickly. This is called hypothyroid</h4>
         <br><br>
         <h3>{{data}}</h3> 
-        <img src={% static 'tyroid.jpg' %}>
+        <img src="{% static 'images/tyroid.jpg' %}"  alt="main" />
     </body>
 </center>
 </html>
